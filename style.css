@@ -197,6 +197,10 @@ hr {
   padding: 12px 0px;
 }
 
+#nutrition-container tr:last-child td {
+  border-bottom: none;
+}
+
 #nutrition-container .value {
   font-family: "OutfitBold";
   color: hsl(14, 45%, 36%);
