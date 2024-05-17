@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "YoungSerif";
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OutfitSemiBold";
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "OutfitBold";
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bold {
+  font-family: "OutfitSemiBold";
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+main {
+  background-color: white;
+  max-width: 736px;
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+img {
+  border-radius: 12px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+#title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#title {
+  font-family: "YoungSerif";
+  font-size: 40px;
+  color: hsl(24, 5%, 18%);
+}
+
+#title-description {
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
+  font-family: "Outfit";
+}
+
+#preparation-conainer {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#preparation-conainer>p {
+  color: hsl(332, 51%, 32%);
+  font-family: "OutfitSemiBold";
+  font-size: 20px;
+}
+
+#preparation-conainer li {
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  margin-left: 16px;
+  padding-left: 24px;
+  line-height: 32px;
+}
+
+#preparation-conainer li::marker {
+  color: hsl(332, 51%, 32%);
+  font-size: 0.8em;
+}
+
+#preparation-conainer li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+#ingredients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#ingredients-container>p {
+  font-family: "YoungSerif";
+  font-size: 28px;
+  color: hsl(14, 45%, 36%);
+}
+
+#ingredients-container li {
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  margin-left: 16px;
+  padding-left: 24px;
+  line-height: 32px;
+}
+
+#ingredients-container li::marker {
+  color: hsl(14, 45%, 36%);
+  font-size: 0.8em;
+}
+
+#ingredients-container li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: hsl(30, 18%, 87%);
+}
+
+#instructions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#instructions-container>p {
+  font-family: "YoungSerif";
+  font-size: 28px;
+  color: hsl(14, 45%, 36%);
+}
+
+#instructions-container li {
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  margin-left: 24px;
+  padding-left: 24px;
+}
+
+#instructions-container li::marker {
+  font-family: "OutfitBold";
+  color: hsl(14, 45%, 36%);
+  font-size: 0.8em;
+}
+
+#instructions-container li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+#nutrition-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#nutrition-container>p {
+  font-family: "YoungSerif";
+  font-size: 28px;
+  color: hsl(14, 45%, 36%);
+}
+
+#nutrition-container>#table-description {
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
+}
+
+#nutrition-container td {
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 12px 0px;
+}
+
+#nutrition-container .value {
+  font-family: "OutfitBold";
+  color: hsl(14, 45%, 36%);
+  font-size: 16px;
+}
